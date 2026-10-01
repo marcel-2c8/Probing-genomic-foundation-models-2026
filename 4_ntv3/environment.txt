@@ -1,0 +1,30 @@
+=== VM INSTANCE SPECS ===
+
+--- CPU Info ---
+CPU(s):                               96
+Model name:                           Intel(R) Xeon(R) Gold 6342 CPU @ 2.80GHz
+Thread(s) per core:                   2
+Socket(s):                            2
+NUMA node0 CPU(s):                    0-23,48-71
+NUMA node1 CPU(s):                    24-47,72-95
+
+--- RAM Info ---
+               total        used        free      shared  buff/cache   available
+Mem:           503Gi        55Gi       326Gi       303Mi       121Gi       444Gi
+Swap:             0B          0B          0B
+
+--- GPU & CUDA Info ---
+NVIDIA A40, 46068 MiB, 570.195.03
+Cuda compilation tools, release 12.4, V12.4.131
+
+--- Python & Torch Info ---
+Python 3.11.10
+Torch Version: 2.4.1+cu124
+CUDA available: True
+Torch CUDA Version: 12.4
+
+accelerate                        1.13.0
+einops                            0.8.2
+pandas                            3.0.3
+pysam                             0.24.0
+transformers                      4.57.3
