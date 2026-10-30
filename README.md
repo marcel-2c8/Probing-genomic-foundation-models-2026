@@ -36,6 +36,7 @@ Probing-genomic-foundation-models-2026/
 │   │   └── 2c8_spliceai.py                  # API call
 │   ├── 2_alphagenome/
 │   │   ├── 2c8_alphagenome_junctionscorer.py  # API call
+│   │   ├── 2c8_alphagenome_merged_splicing_scorer.py  # API call
 │   │   └── 2c8_alphagenome_splicescorer.py    # API call
 │   ├── 3_flashzoi/
 │   │   ├── environment.txt                  # VM hardware, Python/CUDA versions
