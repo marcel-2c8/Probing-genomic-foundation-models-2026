@@ -35,9 +35,9 @@ Probing-genomic-foundation-models-2026/
 │   ├── 1_spliceai/
 │   │   └── 2c8_spliceai.py                  # API call
 │   ├── 2_alphagenome/
-│   │   ├── 2c8_alphagenome_junctionscorer.py  # API call
-│   │   ├── 2c8_alphagenome_merged_splicing_scorer.py  # API call
-│   │   └── 2c8_alphagenome_splicescorer.py    # API call
+│   │   ├── 2c8_alphagenome_junctionscorer.py  			# API call
+│   │   ├── 2c8_alphagenome_merged_splicing_scorer.py   # API call
+│   │   └── 2c8_alphagenome_splicescorer.py    			# API call
 │   ├── 3_flashzoi/
 │   │   ├── environment.txt                  # VM hardware, Python/CUDA versions
 │   │   └── 2c8_flashzoi.py                  # 32-bp bin, 22 ENCODE tracks, Fwd-RC avg
@@ -73,7 +73,7 @@ If you use these predictions or datasets in your research, please cite:
 	year = {2026},
 	doi = {10.64898/2026.10.02.756289},
 	publisher = {Cold Spring Harbor Laboratory},
-	abstract = {As benchmarks saturate, traditional validation methods fail to capture the probabilistic representations of genomic foundation models. This study probes self-supervised generalists (NTv3 650M, Evo2 40B, Genos 10B) alongside task-specific specialists (SpliceAI, AlphaGenome, Borzoi) using a mechanistically focused paradigm centered on expert-curated single-nucleotide substitutions within the splicing regions of the exon-rich OPA1 gene. Extending this analysis across the broader corpus of OPA1 mutations, variants of uncertain significance (VUS), and an independent 65-gene dataset of spliceogenic mutations demonstrates that generalists can match task-specific networks. Training data scale, genetic diversity, and evolutionary context are key for capturing RNA splicing syntax, whereas sparse routing may constrain performance. Mechanistically, foundation models exhibit a compute-asymmetry: the Evo2 40B model frontloads compute into massive parameter scale to resolve single-nucleotide variants within a narrow 425-bp context window, whereas the bidirectional NTv3 650M model and the Genos 10B mixture-of-experts (MoE) architecture backload compute to inference, requiring spatial logit aggregation and expansive context windows of up to 94 kb. Furthermore, classification accuracy across these foundation models benefitted from locus-specific thresholding rather than mutation-class calibration, exposing representation boundaries of the models.Competing Interest StatementThe authors have declared no competing interest.},
+	abstract = {As benchmarks saturate, traditional validation methods fail to capture the probabilistic representations of genomic foundation models. This study probes self-supervised generalists (NTv3 650M, Evo2 40B, Genos 10B) alongside task-specific specialists (SpliceAI, AlphaGenome, Borzoi) using a mechanistically focused paradigm centered on expert-curated single-nucleotide substitutions within the splicing regions of the exon-rich OPA1 gene. Extending this analysis across the broader corpus of OPA1 mutations, variants of uncertain significance (VUS), and an independent 65-gene dataset of spliceogenic mutations demonstrates that foundation models not only match task-specific networks, but also generalize across mutation types. Training data scale, genetic diversity, and evolutionary context are key for capturing RNA splicing syntax, whereas sparse routing may constrain performance. Mechanistically, foundation models exhibit a compute asymmetry: Evo2 40B frontloads compute into massive parameter scale to resolve single-nucleotide variants within a narrow 425-bp context window, whereas the bidirectional NTv3 650M model and the Genos 10B mixture-of-experts (MoE) architecture backload compute to inference, requiring spatial logit aggregation and vast context windows of up to 94 kb. Furthermore, accuracy may benefit from locus-specific thresholding rather than mutation-class calibration, exposing representation boundaries of the self-supervised models.},
 	URL = {https://www.biorxiv.org/content/early/2026/10/09/2026.10.02.756289},
 	eprint = {https://www.biorxiv.org/content/early/2026/10/09/2026.10.02.756289.full.pdf},
 	journal = {bioRxiv}
